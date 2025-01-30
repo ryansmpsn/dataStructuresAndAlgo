@@ -9,7 +9,7 @@ function longestCommonPrefix(strs: string[]): string {
     if (isCommonPrefix) {
       output += char;
     } else {
-      return output;
+      break;
     }
   }
 
