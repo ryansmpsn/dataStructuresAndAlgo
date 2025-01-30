@@ -6,8 +6,8 @@ function maxProfit(prices: number[]): number {
     const current = prices[i];
     const potentialProfit = current - low;
 
-    if (current - low > profit) {
-      profit = current - low;
+    if (potentialProfit > profit) {
+      profit = potentialProfit;
     } else if (current < low) {
       low = current;
     }
