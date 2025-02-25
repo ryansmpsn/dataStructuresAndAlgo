@@ -2,7 +2,12 @@
  Do not return anything, modify nums1 in-place instead.
  */
 
-function merge(nums1: number[], m: number, nums2: number[], n: number): void {
+function modifyNums(
+  nums1: number[],
+  m: number,
+  nums2: number[],
+  n: number
+): void {
   let length: number = m + n - 1;
 
   while (m > 0 && n > 0) {
